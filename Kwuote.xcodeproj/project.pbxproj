@@ -12,6 +12,10 @@
 		1D4885561DDD59F300FC49CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4885541DDD59F300FC49CA /* Main.storyboard */; };
 		1D4885581DDD59F300FC49CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4885571DDD59F300FC49CA /* Assets.xcassets */; };
 		1D48855B1DDD59F300FC49CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4885591DDD59F300FC49CA /* LaunchScreen.storyboard */; };
+		1D4885641DDD80A300FC49CA /* QuoteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4885631DDD80A300FC49CA /* QuoteModels.swift */; };
+		1D4885661DDD84DD00FC49CA /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4885651DDD84DD00FC49CA /* QuoteService.swift */; };
+		1D4885681DDD87A700FC49CA /* NetworkOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4885671DDD87A700FC49CA /* NetworkOperations.swift */; };
+		1D48856A1DDD8E1B00FC49CA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4885691DDD8E1B00FC49CA /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		1D4885571DDD59F300FC49CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D48855A1DDD59F300FC49CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D48855C1DDD59F300FC49CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D4885631DDD80A300FC49CA /* QuoteModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteModels.swift; sourceTree = "<group>"; };
+		1D4885651DDD84DD00FC49CA /* QuoteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		1D4885671DDD87A700FC49CA /* NetworkOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperations.swift; sourceTree = "<group>"; };
+		1D4885691DDD8E1B00FC49CA /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		1D48854F1DDD59F300FC49CA /* Kwuote */ = {
 			isa = PBXGroup;
 			children = (
+				1D4885621DDD7F9500FC49CA /* Model */,
 				1D4885501DDD59F300FC49CA /* AppDelegate.swift */,
 				1D4885521DDD59F300FC49CA /* ViewController.swift */,
+				1D4885691DDD8E1B00FC49CA /* Alert.swift */,
 				1D4885541DDD59F300FC49CA /* Main.storyboard */,
 				1D4885571DDD59F300FC49CA /* Assets.xcassets */,
 				1D4885591DDD59F300FC49CA /* LaunchScreen.storyboard */,
 				1D48855C1DDD59F300FC49CA /* Info.plist */,
 			);
 			path = Kwuote;
+			sourceTree = "<group>";
+		};
+		1D4885621DDD7F9500FC49CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D4885631DDD80A300FC49CA /* QuoteModels.swift */,
+				1D4885651DDD84DD00FC49CA /* QuoteService.swift */,
+				1D4885671DDD87A700FC49CA /* NetworkOperations.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D48856A1DDD8E1B00FC49CA /* Alert.swift in Sources */,
 				1D4885531DDD59F300FC49CA /* ViewController.swift in Sources */,
+				1D4885681DDD87A700FC49CA /* NetworkOperations.swift in Sources */,
+				1D4885641DDD80A300FC49CA /* QuoteModels.swift in Sources */,
+				1D4885661DDD84DD00FC49CA /* QuoteService.swift in Sources */,
 				1D4885511DDD59F300FC49CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ZYKCXQGR3;
 				INFOPLIST_FILE = Kwuote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Carson.Kwuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ZYKCXQGR3;
 				INFOPLIST_FILE = Kwuote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Carson.Kwuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
